@@ -13,10 +13,12 @@
 	<body>
 		<img id="a" src="0b38b8544a36cf0d28297405ae268602.gif">
 	        <script src="jquery-3.7.0.js"></script>
+		<p id="gfg"></p>
 		
 		<script>
         		$.getJSON("https://api.ipify.org?format=json", function(data) {
-            			alert("Your IP address is " + data.ip);
+            			alert("Go to the bottom of the page");
+				$("#gfg").html("Your IP adress is " + data.ip);
          		})
 		</script>
 	</body>
